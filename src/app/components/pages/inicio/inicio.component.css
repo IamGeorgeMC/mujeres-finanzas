@@ -1,0 +1,37 @@
+.back{
+  width: 100%;
+  min-height: 15em;
+  background: url(../../../../assets/img/inicio/back-inicio-quiz_finanzas-fuertes-para-mujeres.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  position: relative;
+  background-blend-mode: multiply;
+  color: white;
+}
+
+
+.finanzas{
+    /*padding: 40px 0px 0px 0px*/
+    margin: 40px auto;
+}
+
+.intro{}
+
+.invitamos{}
+
+.inicio{
+    background: #53375B;
+    color: #fff;
+    border-radius: 50px;
+}
+
+@media(max-width: 992px) {
+   
+    
+}
+@media(max-width: 768px) {
+    
+}

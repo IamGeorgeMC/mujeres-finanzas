@@ -1,0 +1,45 @@
+<app-header></app-header>
+<div class="back">
+    <div class="container">
+        <div *ngIf="!terminado">      
+            <div class="row">
+                <div class="col-md-1"> 
+                    <img src="../../../../assets/img/preguntas/{{actual+1}}.png" alt="">
+                </div>
+                <div class="col-md-11">
+                    <h2 class="finanzas">  {{ preguntas[actual]?.pregunta }}</h2>
+                </div>
+            </div>  
+
+            <div class="row">
+                <div class="container-respuestas">   
+                    <div *ngFor="let res of preguntas[actual]?.respuestas">
+                        <div class="container-imagen" (click)="seleccionarRespuesta(actual, res)">
+                            <!-- <p> {{res.respuesta}}</p> -->
+                            <img class="imagen" src="../../../../assets/img/respuestas/{{res.imagen}}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+
+        <div class="row" *ngIf="showBtnConsejo">
+            <div class="col text-center" style="padding: 20px;">
+                <button (click)="verConsejo()" class="btn inicio">Mostrar Consejo</button>
+            </div>
+        </div>
+        
+        <app-consejos consejo="{{consejo}}" *ngIf="show"></app-consejos>
+
+        <!-- <div class="row" *ngIf="show">
+            <div class="col text-center">
+                <button class="btn siguiente" (click)="sigPregunta()"><img src="../../../../assets/img/arrow_drop_down_circle.png" alt="">Siguiente</button>
+            </div>
+        </div> -->
+
+    </div>
+</div>
+
+<app-footer></app-footer>

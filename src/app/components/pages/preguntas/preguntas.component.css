@@ -1,0 +1,66 @@
+.back{
+    width: 100%;
+    min-height: 15em;
+    background: url(../../../../assets/img/respuestas/back-quiz_finanzas-fuertes-para-mujeres.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+    background-blend-mode: multiply;
+    color: black;
+  }
+  
+  .container-respuestas{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*border: 1px solid;*/
+
+  }
+
+  .container-imagen{   
+   /* border: 1px solid red;*/
+  }
+  
+  .imagen{
+    width: 280px;
+  }
+
+  .imagen:hover {
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 50px;
+  }
+
+  
+  .invitamos{}
+  
+  .inicio{
+      background: #53375B;
+      color: #fff;
+      border-radius: 50px;
+  }
+
+  .siguiente{
+    background: #53375B;
+      color: #fff;
+      border-radius: 50px;
+  }
+  
+  @media(max-width: 992px) {
+    .container-imagen{ 
+        -ms-flex-direction: column;
+        -webkit-box-orient: vertical;
+        flex-direction: column; 
+      }
+  }
+  @media(max-width: 768px) {
+    .container-imagen{ 
+        -ms-flex-direction: column;
+        -webkit-box-orient: vertical;
+        flex-direction: column; 
+      }
+  }

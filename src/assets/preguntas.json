@@ -1,0 +1,192 @@
+[
+    {
+      "id": "1",
+      "pregunta": "Si tuvieras que comprar alguno de estos dos productos ¿cuál elegirías?",
+      "consejo": "Es importante que antes de comprar, compares los componentes y el funcionamiento de los artículos. A veces, los productos para mujeres son más caros en relación al mismo producto para hombres, si descubres que sí son los mismos, reflexiona tu compra, tal vez puedas adquirir el producto más barato y ahorrar un poco de dinero obteniendo el mismo beneficio.",
+      "respuestas": [
+      {
+        "id_pregunta": "1",
+        "respuesta": "",
+        "puntos": "1"
+      },
+      {
+        "id_pregunta": "1",
+        "respuesta": "",
+        "puntos": "0"
+      }]
+    },
+    {
+      "id": "2",
+      "pregunta": "¿Cuál de las siguientes opciones se parece más a la forma en que utilizas tu dinero?",
+      "consejo": "Realizar un presupuesto es un hábito que te permite organizar tus ingresos y planificar tus compras, así evitarás gastar de más y contraer deudas innecesarias.",
+      "respuestas": [
+      {
+        "id_pregunta": "2",
+        "respuesta": "Suelo hacer presupuestos y llevo en orden mis gastos ",
+        "puntos": "1"
+      },
+      {
+        "id_pregunta": "2",
+        "respuesta": "No organizo mis ingresos ni planeo mis gastos, uso mi dinero conforme lo necesito",
+        "puntos": "0"
+      }]
+    },
+    {
+      "id": "3",
+      "pregunta": "¿Cuál de las siguientes opciones define mejor tu relación con él crédito?",
+      "consejo": "Recuerda que el crédito no es una extensión de tu ingreso, es un préstamo que debes pagar, la mayoría de las veces con un interés. Antes de usar un crédito, calcula tu capacidad de pago para saber si tu nivel de ingresos y gastos te permitirá pagarlo.",
+      "respuestas": [
+      {
+        "id_pregunta": "3",
+        "respuesta": "Lo utilizo para comprar artículos de larga duración y siempre pago puntualmente",
+        "puntos": "1"
+      },
+      {
+        "id_pregunta": "3",
+        "respuesta": "Aunque intento pagar puntualmente, en algunas ocasiones me atraso",
+        "puntos": "0"
+      },
+      {
+        "id_pregunta": "3",
+        "respuesta": "Prefiero no usarlo ",
+        "puntos": "0"
+      }]
+    },
+    {
+      "id": "4",
+      "pregunta": "Recibiste dinero que no esperabas, ¿qué haces con él?:",
+      "consejo": "Invertir significa posponer los beneficios de utilizar mi dinero en el presente, esperando obtener más beneficios en el futuro.\r\nHoy, puedes acceder a inversiones que no requieren grandes cantidades de dinero. Busca un asesor certificado y pregunta por las opciones de inversión en las que puedes participar.",
+      "respuestas": [
+      {
+        "id_pregunta": "4",
+        "respuesta": "Me lo gasto porque yo vivo en el presente",
+        "puntos": "0"
+      },
+      {
+        "id_pregunta": "4",
+        "respuesta": "Lo guardo, tal vez en el futuro me sea útil",
+        "puntos": "1"
+      }]
+    },
+    {
+      "id": "5",
+      "pregunta": "Los inversores y solicitantes de financiamiento intercambian dinero y otros instrumentos en los mercados financieros, ¿cuál de las siguientes acciones podrías hacer para involucrarte en estos mercados?",
+      "consejo": "Participar en el mercado financiero es más fácil de lo que imaginas. Si eres principiante, busca información en fuentes como el Banco de México y la CNBV. Para dar el siguiente paso, acércate a los bancos o a las casas de bolsa y pregunta por sus opciones de inversión. Además, puedes desarrollarte profesionalmente en el mercado financiero; estudiar carreras como Economía, Finanzas, Actuaría y otras afines, te acercarán.",
+      "respuestas": [
+      {
+        "id_pregunta": "5",
+        "respuesta": "Elegir alguna opción de inversión o buscar financiamiento para mi negocio",
+        "puntos": "1"
+      },
+      {
+        "id_pregunta": "5",
+        "respuesta": "Informarme en fuentes oficiales para saber más sobre dicho mercado ",
+        "puntos": "1"
+      }]
+    },
+    {
+      "id": "6",
+      "pregunta": "¿Cuál de las siguientes opciones se parece más a la forma en que preparas tu retiro laboral?",
+      "consejo": "Estadísticamente, las mujeres viven más años que los hombres. Por ello, es importante planear tu retiro laboral desde joven. Mientras más ahorres para tu retiro, mayor será tu pensión y estarás más cerca de cubrir tus necesidades cuando dejes de trabajar.",
+      "respuestas": [
+      {
+        "id_pregunta": "6",
+        "respuesta": "Tengo una AFORE o una cuenta en donde hago aportaciones mes con mes",
+        "puntos": "1"
+      },
+      {
+        "id_pregunta": "6",
+        "respuesta": "Por ahora no me preocupo, yo vivo en el presente, cuando llegue el momento de mi retiro seguro que me las ingeniaré",
+        "puntos": "0"
+      }]
+    },
+    {
+      "id": "7",
+      "pregunta": "¿Qué harías si tu mascota se enfermara, se dañara tu computadora o se descompusiera tu auto?",
+      "consejo": "Tener un fondo de ahorro para emergencias que sea aproximadamente de 3 a 6 veces tu ingreso mensual, te ayudará a estar preparada para hacer frente a los imprevistos que surjan.",
+      "respuestas": [
+      {
+        "id_pregunta": "7",
+        "respuesta": "Pediría prestado o empeñaría algún producto para salir de la emergencia ",
+        "puntos": "0"
+      },
+      {
+        "id_pregunta": "7",
+        "respuesta": "No me preocuparía, tengo dinero ahorrado para imprevistos",
+        "puntos": "1"
+      }]
+    },
+    {
+      "id": "8",
+      "pregunta": "Selecciona los productos financieros que utilizas:",
+      "consejo": "Contar con un seguro, una cuenta bancaria, tarjeta de crédito, AFORE, entre otros productos financieros, te da acceso a más bienes y servicios, te permite cuidar tu dinero, hacer frente a imprevistos y mantener la estabilidad de tus finanzas personales.",
+      "respuestas": [
+      {
+        "id_pregunta": "8",
+        "respuesta": "Tarjeta de débito ",
+        "puntos": "1"
+      },
+      {
+        "id_pregunta": "8",
+        "respuesta": "Tarjeta de crédito ",
+        "puntos": "1"
+      },
+      {
+        "id_pregunta": "8",
+        "respuesta": "Banca en línea o app móvil ",
+        "puntos": "1"
+      },
+      {
+        "id_pregunta": "8",
+        "respuesta": "AFORE ",
+        "puntos": "1"
+      },
+      {
+        "id_pregunta": "8",
+        "respuesta": "Seguro de vida, auto o de gastos médicos ",
+        "puntos": "1"
+      },
+      {
+        "id_pregunta": "8",
+        "respuesta": "Cuenta de inversión ",
+        "puntos": "1"
+      },
+      {
+        "id_pregunta": "8",
+        "respuesta": "Crédito de auto o de casa ",
+        "puntos": "1"
+      }]
+    },
+    {
+      "id": "9",
+      "pregunta": "¿En cuál de los siguientes lugares sueles comprar productos de uso cotidiano?",
+      "consejo": "Comprar en los negocios de la colonia favorece la producción y el consumo en los mercados y las tiendas locales, muchos de ellos son emprendimientos y fuente de ingresos para las mujeres de la comunidad.",
+      "respuestas": [
+      {
+        "id_pregunta": "9",
+        "respuesta": "Grandes tiendas departamentales ",
+        "puntos": "0"
+      },
+      {
+        "id_pregunta": "9",
+        "respuesta": "Tiendas y mercados locales",
+        "puntos": "1"
+      }]
+    },
+    {
+      "id": "10",
+      "pregunta": "¿Cuál de los siguientes escenarios describe una situación financiera que te gustaría experimentar?",
+      "consejo": "La independencia financiera es un tema que va mucho más allá de ahorrar o emprender. Según las expertas, el empoderamiento económico femenino va de la mano de la educación en todos los niveles, pues ésta, permite mitigar círculos de violencia, pobreza, rezago y contribuye a la igualdad de género.",
+      "respuestas": [
+      {
+        "id_pregunta": "10",
+        "respuesta": "Que mi familia o pareja pague todas las cuentas, comprar lo que quiero, viajar y vivir despreocupada de cualquier gasto",
+        "puntos": "0"
+      },
+      {
+        "id_pregunta": "10",
+        "respuesta": "Alcanzar mi independencia financiera, tener finanzas sanas en pareja o familia y tiempo de calidad para disfrutar el fruto de mis ingresos",
+        "puntos": "1"
+      }]
+    }
+]

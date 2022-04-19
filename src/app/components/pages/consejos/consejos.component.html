@@ -1,0 +1,24 @@
+<div class="">
+    <div class="consejos" *ngIf="!showConsejo">
+        <div class="row">
+    		<div class="col-md-4 imagenconsejo">
+    			<img src="../../../../assets/img/respuestas/2A.png" alt="" width="100%">
+    		</div>
+    		<div class="col-md-8">
+    			<div class="consejo">
+	    			<h2 class="consejotitulo">Consejo de las expertas</h2>
+	    			<p>{{consejo}}</p>
+    			</div>
+    		</div>
+    </div>
+    <div class="row">
+        <div class="col text-center" *ngIf="!btnResultado">
+            <button class="btn siguiente" (click)="sigPregunta()"><img src="../../../../assets/img/arrow_drop_down_circle.png" alt="">Siguiente</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center" *ngIf="btnResultado">
+            <a class="btn siguiente" [routerLink]="'/resultados'"> Ver resultados</a>
+        </div>
+    </div>
+</div><br>

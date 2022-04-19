@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img class="logo" src="assets/img/logo-mide-digital-1-300x172.png" alt="Logo Mide">
+        </a>
+
+        <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{ 'show': navbarOpen }">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link">ACERCA DE</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">PROMOCIONES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">AYUDA</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<nav class="navbar-thow navbar-expand-lg navbar-light">
+    <div class="container p-0">
+        <div class="submenu" [ngClass]="{'sinBackGround': !subMenu}">
+            <div class="contenido">
+                <div *ngIf="subMenu" class="collapse navbar-collapse" id="navbarSupportedContent"
+                    [ngClass]="{ 'show': navbarTowOpen }">
+                    <ul class="navbar-nav mr-auto" [ngClass]="{ 'verdeh': colorMenu === 'verde' }">
+                        <li class="nav-item" (click)="goBack()">
+                            <a class="nav-link" href="#"><img src="assets/img/fecha-izquierda.png"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/especialidades-y-servicios"
+                                routerLinkActive="active">ESPECIALIDADES Y SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">COVID 19</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> RESULTADOS </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> <img src="assets/img/header/telefono.png"> 01 8000 2200 </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</nav>
+<div class="clearfix"></div>

@@ -1,0 +1,30 @@
+.consejos{
+	background: #fff;
+	border-radius: 50px;
+	margin: 0; 
+	padding-top: 20px; 
+	padding-bottom: 20px;
+}
+.imagenconsejo{
+	margin: 40px auto;
+}
+
+.consejotitulo{
+	text-align: left;
+	color: #C75B59;
+	text-transform: uppercase;
+}
+
+.consejo{
+	margin-top: 18%;
+}
+
+p{
+	color: #54565B;
+}
+
+.siguiente{
+	background: #53375B;
+    color: #fff;
+    border-radius: 50px;
+}

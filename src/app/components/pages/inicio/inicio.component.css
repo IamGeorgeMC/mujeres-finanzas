@@ -12,26 +12,101 @@
   color: white;
 }
 
-
 .finanzas{
-    /*padding: 40px 0px 0px 0px*/
+    color: #fff;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 66px;
+    line-height: 113%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
     margin: 40px auto;
 }
 
-.intro{}
+.intro{
+    color: #fff;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+}
 
-.invitamos{}
+.invitamos{
+    color: #fff;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
 
 .inicio{
     background: #53375B;
     color: #fff;
     border-radius: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 20px 75px;
 }
 
 @media(max-width: 992px) {
-   
+  .finanzas{
+    color: #fff;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 113%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin: 40px auto;
+}
+
+.intro{
+    color: #fff;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.invitamos{
+    color: #fff;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
     
 }
 @media(max-width: 768px) {
-    
+  .finanzas{
+    color: #fff;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 113%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin: 40px auto;
+}
+
+.intro{
+    color: #fff;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.invitamos{
+    color: #fff;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
 }

@@ -12,45 +12,118 @@
     color: black;
   }
   
-  .woman{
-      height: 100%;
-  }
-  
-  .finanzas{
-      /*padding: 40px 0px 0px 0px*/
+  .felicitaciones{
+      color: #fff;
+      font-family: poppins;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 66px;
+      line-height: 113%;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
       margin: 40px auto;
   }
   
-  .respuestas{
-    display: flex;
-    justify-content: space-between;
+  .intro{
+    color: #fff;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+   }
+  
+  .invitamos{
+    color: #fff;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  .bloomberg{
+    color: #fff;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
   }
   
-  .invitamos{}
-  
-  .inicio{
+  .repetir{
       background: #53375B;
       color: #fff;
       border-radius: 50px;
+      margin-right: 50px;
   }
 
-.siguiente{
-  background: #53375B;
+  .compartir{
     color: #fff;
     border-radius: 50px;
-}
+    filter: drop-shadow(2px 2px 50px rgba(0, 0, 0, 0.2));
+    border: 1px solid #ffffff;
+  }
   
   @media(max-width: 992px) {
-    .respuestas{ 
-        -ms-flex-direction: column;
-        -webkit-box-orient: vertical;
-        flex-direction: column; 
+      .woman{
+        width: 50%;
       }
+
+      .felicitaciones{
+        color: #fff;
+        font-family: poppins;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 113%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        margin: 40px auto;
+    }
+    .intro{
+      color: #fff;
+      font-family: poppins;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+     }
+    
+    .invitamos{
+      color: #fff;
+      font-family: poppins;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+    }
   }
   @media(max-width: 768px) {
-    .respuestas{ 
-        -ms-flex-direction: column;
-        -webkit-box-orient: vertical;
-        flex-direction: column; 
-      }
+    .woman{
+      width: 50%;
+    }
+      
+    .felicitaciones{
+        color: #fff;
+        font-family: poppins;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 113%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        margin: 40px auto;
+    }
+
+    .intro{
+      color: #fff;
+      font-family: poppins;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+    }
+    
+    .invitamos{
+      color: #fff;
+      font-family: poppins;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+    }
   }

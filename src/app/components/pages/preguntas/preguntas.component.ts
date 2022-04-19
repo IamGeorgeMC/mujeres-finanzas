@@ -38,7 +38,7 @@ export class PreguntasComponent implements OnInit {
     
     let localData = JSON.parse(localStorage.getItem('quiz'));
     if (localData) this.quiz = localData;
-
+    
     this.actual = this.quiz.pactual;
 
     this.quizDataObs$.next(this.quiz);
@@ -64,6 +64,7 @@ export class PreguntasComponent implements OnInit {
     }*/
 
     this.quiz.puntos = Number(this.quiz.puntos) + Number(option.puntos);
+    this.quiz.pactual = this.actual;
     this.quizDataObs$.next({ ...this.quiz });
     localStorage.setItem('quiz', JSON.stringify(this.quiz));
 
@@ -78,7 +79,7 @@ export class PreguntasComponent implements OnInit {
     this.terminado = true;
   }
 
-  sigPregunta(){
+  /*sigPregunta(){
        this.quiz.pactual = this.quiz.pactual + 1;
        this.quizDataObs$.next({ ...this.quiz });
        localStorage.setItem('quiz', JSON.stringify(this.quiz));
@@ -87,6 +88,16 @@ export class PreguntasComponent implements OnInit {
        console.log(this.actual)
        this.show = false;
        this.terminado = false;
+  }*/
+
+
+  validcionpre(event){
+    console.log(event)
+    this.terminado = event.terminado;
+    this.actual = event.actual;
+    this.show = false;
   }
+
+  
 
 }

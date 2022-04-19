@@ -3,11 +3,11 @@
     <div class="container">
         <div *ngIf="!terminado">      
             <div class="row">
-                <div class="col-md-1"> 
-                    <img src="../../../../assets/img/preguntas/{{actual+1}}.png" alt="">
+                <div class="col-1"> 
+                    <img src="../../../../assets/img/preguntas/{{actual+1}}.png" class="numimagen" width="100%" alt="">
                 </div>
-                <div class="col-md-11">
-                    <h2 class="finanzas">  {{ preguntas[actual]?.pregunta }}</h2>
+                <div class="col-11">
+                        <h2 class="finanzas">  {{ preguntas[actual]?.pregunta }}</h2>
                 </div>
             </div>  
 
@@ -27,11 +27,12 @@
 
         <div class="row" *ngIf="showBtnConsejo">
             <div class="col text-center" style="padding: 20px;">
-                <button (click)="verConsejo()" class="btn inicio">Mostrar Consejo</button>
+                <button (click)="verConsejo()" class="btn inicio">Continuar</button>
             </div>
         </div>
         
-        <app-consejos consejo="{{consejo}}" *ngIf="show"></app-consejos>
+        <app-consejos consejo="{{consejo}}" *ngIf="show" (terminado)="validcionpre($event)" (actual)="validcionpre($event)"></app-consejos>
+
 
         <!-- <div class="row" *ngIf="show">
             <div class="col text-center">

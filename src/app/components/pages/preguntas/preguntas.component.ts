@@ -28,6 +28,7 @@ export class PreguntasComponent implements OnInit {
   actual : number = 0;
 
   show:boolean = false;
+  selected: boolean = false;
   showBtnConsejo:boolean = false;
   terminado : boolean = false;
   
@@ -58,23 +59,29 @@ export class PreguntasComponent implements OnInit {
   }
 
   seleccionarRespuesta(actualP:number, option:any){
-    /*if (actualP === this.preguntas.length) {
-      this.terminado = true;
-      console.log('el quiz ha termiando')  
+    /*for (var val of this.preguntas[actualP].respuestas) {
+        console.log(val)
+      
+      if(val.imagen == option.imagen){
+        this.selected = true;
+      }else if(val.imagen != option.imagen){
+        this.selected = false;
+      }
     }*/
-
+    
     this.quiz.puntos = Number(this.quiz.puntos) + Number(option.puntos);
     this.quiz.pactual = this.actual;
     this.quizDataObs$.next({ ...this.quiz });
     localStorage.setItem('quiz', JSON.stringify(this.quiz));
 
+
     this.showBtnConsejo = true;
     this.consejo = this.preguntas[actualP].consejo;
-    console.log(this.preguntas[actualP].consejo, option)
   }
 
   verConsejo(){
     this.show = true;
+    this.selected = false;
     this.showBtnConsejo = false;
     this.terminado = true;
   }
@@ -97,7 +104,4 @@ export class PreguntasComponent implements OnInit {
     this.actual = event.actual;
     this.show = false;
   }
-
-  
-
 }

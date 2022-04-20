@@ -1,5 +1,6 @@
 .consejos{
-	background: #fff;
+	background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 30px rgba(71, 55, 23, 0.1);
 	border-radius: 50px;
 	margin: 0; 
 	padding-top: 20px; 
@@ -24,7 +25,7 @@
 	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 21px;
+	font-size: 20px;
 }
 
 p{
@@ -32,7 +33,51 @@ p{
 }
 
 .siguiente{
-	background: #53375B;
+	  background: #53375B;
     color: #fff;
     border-radius: 50px;
+    font-family: 'Poppins';
+	  font-style: normal;
+	  font-weight: 600;
+	  font-size: 18px;
+	  padding: 15px 55px;
 }
+
+  @media(max-width: 992px) {
+   .consejotitulo{
+		text-align: left;
+		color: #C75B59;
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 30px;
+		text-transform: uppercase;
+	}
+
+	.consejo{
+		margin-top: 18%;
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+	}
+  }
+  @media(max-width: 768px) {
+    .consejotitulo{
+		text-align: left;
+		color: #C75B59;
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 20px;
+		text-transform: uppercase;
+	}
+
+	.consejo{
+		margin-top: 18%;
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+	}
+  }

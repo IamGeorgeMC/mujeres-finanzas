@@ -15,6 +15,7 @@ export class ResultadosComponent implements OnInit {
   felicitaciones: string;
   intro: string;
   parrafo: string;
+  parrafo2: string;
   bloomberg: string;
   data: any;
 
@@ -38,7 +39,8 @@ export class ResultadosComponent implements OnInit {
          this.felicitaciones = this.cadena[0];
          this.intro = this.cadena[1];
          this.parrafo = this.cadena[2];
-         this.bloomberg = this.cadena[3];
+         this.parrafo2 = this.cadena[3];
+         this.bloomberg = this.cadena[4];
       
       }else{
          this.resultados = results[1].resultados;
@@ -47,7 +49,8 @@ export class ResultadosComponent implements OnInit {
          this.felicitaciones = this.cadena[0];
          this.intro = this.cadena[1];
          this.parrafo = this.cadena[2];
-         this.bloomberg = this.cadena[3];
+         this.parrafo2 = this.cadena[3];
+         this.bloomberg = this.cadena[4];
       }
     });
   }

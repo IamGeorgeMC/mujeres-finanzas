@@ -52,19 +52,34 @@
       background: #53375B;
       color: #fff;
       border-radius: 50px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
       margin-right: 50px;
+      padding: 20px 75px;
   }
 
   .compartir{
     color: #fff;
     border-radius: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
     filter: drop-shadow(2px 2px 50px rgba(0, 0, 0, 0.2));
     border: 1px solid #ffffff;
+    padding: 20px 75px;
+  }
+
+  .container-botones{
+    display: flex;
+    flex-wrap: wrap;
   }
   
   @media(max-width: 992px) {
       .woman{
-        width: 50%;
+        width: 100%;
       }
 
       .felicitaciones{
@@ -72,7 +87,7 @@
         font-family: poppins;
         font-style: normal;
         font-weight: 900;
-        font-size: 40px;
+        font-size: 20px;
         line-height: 113%;
         letter-spacing: 0.02em;
         text-transform: uppercase;
@@ -83,7 +98,7 @@
       font-family: poppins;
       font-style: normal;
       font-weight: 400;
-      font-size: 30px;
+      font-size: 15px;
      }
     
     .invitamos{
@@ -91,12 +106,45 @@
       font-family: poppins;
       font-style: normal;
       font-weight: 400;
-      font-size: 18px;
+      font-size: 12px;
     }
+
+    .bloomberg{
+      color: #fff;
+      font-family: poppins;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+    }
+
+    .repetir{
+      background: #53375B;
+      color: #fff;
+      border-radius: 50px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      margin-right: 50px;
+      padding: 20px 30px;
+  }
+
+  .compartir{
+    color: #fff;
+    border-radius: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    filter: drop-shadow(2px 2px 50px rgba(0, 0, 0, 0.2));
+    border: 1px solid #ffffff;
+    padding: 20px 30px;
+  }
+
   }
   @media(max-width: 768px) {
     .woman{
-      width: 50%;
+      width: 100%;
     }
       
     .felicitaciones{
@@ -104,7 +152,7 @@
         font-family: poppins;
         font-style: normal;
         font-weight: 900;
-        font-size: 40px;
+        font-size: 20px;
         line-height: 113%;
         letter-spacing: 0.02em;
         text-transform: uppercase;
@@ -116,7 +164,7 @@
       font-family: poppins;
       font-style: normal;
       font-weight: 400;
-      font-size: 30px;
+      font-size: 15px;
     }
     
     .invitamos{
@@ -124,6 +172,38 @@
       font-family: poppins;
       font-style: normal;
       font-weight: 400;
-      font-size: 18px;
+      font-size: 12px;
     }
+    .bloomberg{
+      color: #fff;
+      font-family: poppins;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+    }
+
+    .repetir{
+      background: #53375B;
+      color: #fff;
+      border-radius: 50px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      margin-right: 50px;
+      padding: 20px 20px;
+  }
+
+  .compartir{
+    color: #fff;
+    border-radius: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    filter: drop-shadow(2px 2px 50px rgba(0, 0, 0, 0.2));
+    border: 1px solid #ffffff;
+    padding: 20px 20px;
+  }
+
   }

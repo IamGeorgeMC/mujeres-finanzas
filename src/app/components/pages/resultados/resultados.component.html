@@ -8,11 +8,10 @@
                 <h2 class="intro">{{intro}}</h2>
                 
                 <p class="invitamos">{{parrafo}}</p>
+                
+                <p class="invitamos">{{parrafo2}}</p>
 
                 <p class="bloomberg">{{bloomberg}}</p>
-                
-                <br>
-
                 <!-- <a [routerLink]="['/inicio']" class="btn repetir">REPETIR QUIZ</a>
                 <a [routerLink]="['/preguntas']" class="btn compartir">COMPARTIR QUIZ</a> -->
                 
@@ -21,10 +20,10 @@
                 <img src="../assets/img/inicio/img-inicio-quiz_finanzas-fuertes-para-mujeres.jpg" width="100%" class="img woman" alt="">
             </div>
         </div>
-        <div>
-                <a [routerLink]="['/inicio']" (click)="repetir()" class="btn repetir">REPETIR QUIZ</a>
-                <a [routerLink]="['/inicio']" class="btn compartir">COMPARTIR QUIZ</a>
-        </div>
+        <div class="container-botones">
+            <a [routerLink]="['/inicio']" (click)="repetir()" class="btn repetir">REPETIR QUIZ</a>
+            <a [routerLink]="['/inicio']" class="btn compartir">COMPARTIR QUIZ</a>
+        </div><br>
     </div>
 </div>
 <app-footer></app-footer>

@@ -17,7 +17,9 @@ export class ResultadosComponent implements OnInit {
   parrafo: string;
   parrafo2: string;
   bloomberg: string;
+  img: string;
   data: any;
+  copy: boolean;
 
 
   constructor(private _resultados: PreguntasService) {
@@ -32,7 +34,7 @@ export class ResultadosComponent implements OnInit {
   getResults(): void {
     
     this._resultados.getResultsByQuiz().subscribe(results=> {
-      if(this.data.puntos >= 10 && this.data.puntos <= 16){
+      if(this.data.puntos >= 10){
          this.resultados = results[0].resultados;
          this.cadena = this.resultados.split(' - ');
          
@@ -41,6 +43,7 @@ export class ResultadosComponent implements OnInit {
          this.parrafo = this.cadena[2];
          this.parrafo2 = this.cadena[3];
          this.bloomberg = this.cadena[4];
+         this.img = '../../../../assets/img/inicio/felicidades.png';
       
       }else{
          this.resultados = results[1].resultados;
@@ -51,12 +54,32 @@ export class ResultadosComponent implements OnInit {
          this.parrafo = this.cadena[2];
          this.parrafo2 = this.cadena[3];
          this.bloomberg = this.cadena[4];
+         this.img = '../../../../assets/img/inicio/Oh-no.png';
       }
     });
   }
 
   repetir(){
     localStorage.clear();
+  }
+
+  copiartexto(){
+     let selBox = document.createElement('textarea');
+      selBox.style.position = 'fixed';
+      selBox.style.left = '0';
+      selBox.style.top = '0';
+      selBox.style.opacity = '0';
+      selBox.value = "http://quizmujeres.indiga.mx/";
+      document.body.appendChild(selBox);
+      selBox.focus();
+      selBox.select();
+      document.execCommand('copy');
+      document.body.removeChild(selBox);
+      this.copy = true;
+      setTimeout(()=>{
+        this.copy = false;
+        this.copy = false;
+      }, 2000)
   }
 
 

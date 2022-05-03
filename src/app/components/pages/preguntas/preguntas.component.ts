@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { BehaviorSubject } from 'rxjs';
 
 //servicio
@@ -28,13 +28,14 @@ export class PreguntasComponent implements OnInit {
   actual : number = 0;
 
   show:boolean = false;
-  selected: boolean = false;
+  valor: string = "";
+  imgselected: string;
   showBtnConsejo:boolean = false;
   terminado : boolean = false;
   
   quizDataObs$ = new BehaviorSubject(this.quiz);
 
-  constructor(private route: ActivatedRoute,private _preguntas: PreguntasService,) { 
+  constructor(private route: ActivatedRoute,private _preguntas: PreguntasService, private router:Router) { 
     this.preguntas = new Array<Preguntas>();
     
     let localData = JSON.parse(localStorage.getItem('quiz'));
@@ -43,11 +44,16 @@ export class PreguntasComponent implements OnInit {
     this.actual = this.quiz.pactual;
 
     this.quizDataObs$.next(this.quiz);
+
   }
 
   ngOnInit(): void {
     localStorage.setItem('quiz', JSON.stringify(this.quiz));
     this.getQuestions();
+
+    if(this.actual === 9){
+      this.router.navigate(['/resultados']);
+    }
   }
 
   // get Questions
@@ -58,22 +64,37 @@ export class PreguntasComponent implements OnInit {
       });
   }
 
-  seleccionarRespuesta(actualP:number, option:any){
-    /*for (var val of this.preguntas[actualP].respuestas) {
-        console.log(val)
-      
-      if(val.imagen == option.imagen){
-        this.selected = true;
-      }else if(val.imagen != option.imagen){
-        this.selected = false;
-      }
-    }*/
+  seleccionarRespuesta(actualP:number, option:any, selected:string, index:any){
+    const element :any = document.getElementById('imgselected'+index);
+    const element2 :any = document.getElementsByClassName('selected');
+    var input : any = (<HTMLInputElement>document.getElementById('valueSelect'+index)).value;
     
+    if(actualP == 7){
+      if(input == 'selected'){
+          element.classList.remove('selected');
+          (<HTMLInputElement>document.getElementById('valueSelect'+index)).value = '';
+      }else{
+        if(selected == option.imagen){
+          element.classList.add('selected');
+          (<HTMLInputElement>document.getElementById('valueSelect'+index)).value = 'selected';
+        }
+      }
+    }else{
+      if(element2.length > 0){
+        for (var i = 0; i< element2.length; i++) {
+           element2[i].classList.remove("selected");
+           element.classList.add("selected");
+        }
+      }else{
+        element.classList.add('selected');
+      }
+    }
+    
+    this.imgselected = option.imagen;
     this.quiz.puntos = Number(this.quiz.puntos) + Number(option.puntos);
     this.quiz.pactual = this.actual;
     this.quizDataObs$.next({ ...this.quiz });
     localStorage.setItem('quiz', JSON.stringify(this.quiz));
-
 
     this.showBtnConsejo = true;
     this.consejo = this.preguntas[actualP].consejo;
@@ -81,7 +102,6 @@ export class PreguntasComponent implements OnInit {
 
   verConsejo(){
     this.show = true;
-    this.selected = false;
     this.showBtnConsejo = false;
     this.terminado = true;
   }
@@ -99,7 +119,7 @@ export class PreguntasComponent implements OnInit {
 
 
   validcionpre(event){
-    console.log(event)
+    //console.log(event)
     this.terminado = event.terminado;
     this.actual = event.actual;
     this.show = false;

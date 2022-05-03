@@ -1,3 +1,4 @@
+<div id="top"></div>
 <app-header></app-header>
 <div class="back">
     <div class="container">
@@ -13,11 +14,15 @@
 
             <div class="row">
                 <div class="container-respuestas">   
-                    <div *ngFor="let res of preguntas[actual]?.respuestas">
-                        <div class="container-imagen" (click)="seleccionarRespuesta(actual, res)">
-                            <!-- <p> {{res.respuesta}}</p> -->
-                            
-                            <img class="imagen" [ngClass]="selected ? 'selected' : '' " src="../../../../assets/img/respuestas/{{res.imagen}}" alt="">
+                    <div *ngFor="let res of preguntas[actual]?.respuestas; let i = index">
+                        <div class="container-imagen text-center" (click)="seleccionarRespuesta(actual, res, res.imagen, i)">
+                            <div class="respuesta-descripcion">
+                                <p> {{res.respuesta}}</p>
+                            </div>
+                             <div class="img-respuesta">
+                                <input type="text" hidden id="valueSelect{{i}}" value="{{valor}}">
+                                <img id="imgselected{{i}}" class="imagen" src="../../../../assets/img/respuestas/{{res.imagen}}" alt=""> 
+                             </div>                          
                         </div>
                     </div>
                 </div>
@@ -32,7 +37,7 @@
             </div>
         </div>
         
-        <app-consejos consejo="{{consejo}}" *ngIf="show" (terminado)="validcionpre($event)" (actual)="validcionpre($event)"></app-consejos>
+        <app-consejos consejo="{{consejo}}" img="{{imgselected}}" *ngIf="show" (terminado)="validcionpre($event)" (actual)="validcionpre($event)"></app-consejos>
 
 
         <!-- <div class="row" *ngIf="show">

@@ -11,9 +11,9 @@ import { catchError, tap } from 'rxjs/operators';
 })
 export class PreguntasService {
 
-  private url = 'http://localhost/quiz/apis/preguntas.php';
+  private url = 'http://quizmujeres.indiga.mx/quiz/apis/preguntas.php';
    
-  private urlresultados = 'http://localhost/quiz/apis/resultados.php'; 
+  private urlresultados = 'http://quizmujeres.indiga.mx/quiz/apis/resultados.php'; 
 
   constructor(private http: HttpClient) { }
 

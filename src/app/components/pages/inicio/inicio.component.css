@@ -12,6 +12,10 @@
   color: white;
 }
 
+.mujeres{
+    margin-top: 50px;
+}
+
 .finanzas{
     color: #fff;
     font-family: poppins;
@@ -52,6 +56,11 @@
 }
 
 @media(max-width: 992px) {
+  .mujeres{
+    width: 220px;
+     margin-top: 0px;
+  }
+
   .finanzas{
     color: #fff;
     font-family: poppins;
@@ -62,26 +71,43 @@
     letter-spacing: 0.02em;
     text-transform: uppercase;
     margin: 40px auto;
-}
+    }
 
-.intro{
-    color: #fff;
-    font-family: poppins;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-}
+    .intro{
+        color: #fff;
+        font-family: poppins;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+    }
 
-.invitamos{
-    color: #fff;
-    font-family: poppins;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-}
+    .invitamos{
+        color: #fff;
+        font-family: poppins;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    .inicio{
+        background: #53375B;
+        color: #fff;
+        border-radius: 50px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        padding: 10px 40px;
+    }
     
 }
+
 @media(max-width: 768px) {
+  .mujeres{
+    width: 220px;
+     margin-top: 0px;
+  }
+
   .finanzas{
     color: #fff;
     font-family: poppins;
@@ -92,21 +118,32 @@
     letter-spacing: 0.02em;
     text-transform: uppercase;
     margin: 40px auto;
-}
+    }
 
-.intro{
-    color: #fff;
-    font-family: poppins;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-}
+    .intro{
+        color: #fff;
+        font-family: poppins;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+    }
 
-.invitamos{
-    color: #fff;
-    font-family: poppins;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-}
+    .invitamos{
+        color: #fff;
+        font-family: poppins;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    .inicio{
+        background: #53375B;
+        color: #fff;
+        border-radius: 50px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        padding: 10px 40px;
+    }
 }

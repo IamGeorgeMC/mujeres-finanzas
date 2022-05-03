@@ -7,22 +7,33 @@
                 
                 <h2 class="intro">{{intro}}</h2>
                 
-                <p class="invitamos">{{parrafo}}</p>
+                <p class="invitamos" *ngIf="data.puntos >= 10">{{parrafo}}</p>
+                <p class="invitamos" *ngIf="data.puntos <= 9">
+                    Quizás hay algunos gastos que te están rebasando y no cuentas con un plan para solventarlos o mejorar tu situación financiera…¡pero no te preocupes!, nunca es tarde para transformar tus finanzas. El primer paso es revisar tu estado financiero actual, ordenar tus gastos y planear opciones para incrementar tus ingresos. Reflexiona las compras que realizas y reduce los gastos innecesarios. ¡Tú puedes!, esfuérzate y comprométete a ahorrar una cantidad fija de manera mensual, así podrás cubrir imprevistos y reducir deudas. Incluye estos elementos en un presupuesto y apégate a él, revisa la infografía <span style="font-style: italic;">Toma el control de tus finanzas con un presupuesto </span>, obtendrás los pasos para realizar uno de manera sencilla.
+                </p>
                 
-                <p class="invitamos">{{parrafo2}}</p>
+                <p class="invitamos" *ngIf="data.puntos >= 10">
+                    Si iniciaste o estás planeando un proyecto que incremente tus ingresos, descarga nuestra app <span style="font-style: italic;">Smart Plan</span>, un recurso esencial para quien desea iniciar o fortalecer su emprendimiento, ¡éxito!
+                </p>
+                <p class="invitamos" *ngIf="data.puntos <= 9">{{parrafo2}}</p>
 
-                <p class="bloomberg">{{bloomberg}}</p>
+                <p class="bloomberg" >{{bloomberg}}</p>
                 <!-- <a [routerLink]="['/inicio']" class="btn repetir">REPETIR QUIZ</a>
                 <a [routerLink]="['/preguntas']" class="btn compartir">COMPARTIR QUIZ</a> -->
-                
             </div>
             <div class="col-md-4 text-center">
-                <img src="../assets/img/inicio/img-inicio-quiz_finanzas-fuertes-para-mujeres.jpg" width="100%" class="img woman" alt="">
+                <img [src]="img" width="100%" class="img woman" alt="">
             </div>
         </div>
+            <input type="text" hidden value="http://quizmujeres.indiga.mx/" #copiar>
         <div class="container-botones">
-            <a [routerLink]="['/inicio']" (click)="repetir()" class="btn repetir">REPETIR QUIZ</a>
-            <a [routerLink]="['/inicio']" class="btn compartir">COMPARTIR QUIZ</a>
+            <a [routerLink]="['/']" (click)="repetir()" class="btn repetir">REPETIR QUIZ</a>
+            <a (click)="copiartexto()" class="btn compartir" *ngIf="!copy"> 
+                COMPARTIR QUIZ
+            </a>
+            <a class="btn compartir" *ngIf="copy"> 
+               Copiado en clipboard
+            </a>
         </div><br>
     </div>
 </div>

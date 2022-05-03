@@ -16,12 +16,14 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
   }
 
   .container-imagen{
     align-items: center;
-    margin: 20px;
+    margin: 12px;
+    max-width: 350px;
   }
 
   .container-titulo{   
@@ -31,7 +33,7 @@
   }
 
   .imagen{
-    width: 250px;
+    width: 220px;
   }
   
   .imagen:hover {
@@ -45,9 +47,13 @@
     border-radius: 50px;
   }
 
-  .noselected{
+  .respuesta-descripcion{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #54565B;
   }
-
   
   .finanzas{
     font-family: 'Poppins';
@@ -79,6 +85,10 @@
   }
   
   @media(max-width: 992px) {
+    .container-imagen{
+      /*margin: 30px auto;*/
+    }
+
     .finanzas{
       font-family: 'Poppins';
       font-style: normal;
@@ -93,7 +103,7 @@
     }
 
     .imagen{
-      width: 120px;
+      width: 160px;
     }
 
     .numimagen{
@@ -112,11 +122,15 @@
     }
   }
   @media(max-width: 768px) {
+    .container-imagen{
+      /*margin: 50px auto;*/
+    }
+
     .finanzas{
       font-family: 'Poppins';
       font-style: normal;
       font-weight: 400;
-      font-size: 12px;
+      font-size: 15px;
       color: #54565B;
       position: relative;
       top:24%;
@@ -127,7 +141,7 @@
     
 
     .imagen{
-        width: 120px;
+        width: 160px;
     }  
 
     .numimagen{

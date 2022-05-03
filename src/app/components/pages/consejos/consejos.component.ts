@@ -13,6 +13,7 @@ import { PreguntasComponent } from '../preguntas/preguntas.component';
 export class ConsejosComponent implements OnInit {
 
   @Input() consejo: string = "";
+  @Input() img: string = "";
 
   @Output() terminado = new EventEmitter<SigPregunta>();
 
@@ -32,6 +33,14 @@ export class ConsejosComponent implements OnInit {
           console.log('el quiz ha termiando')  
     }
   }
+  
+  ngAfterViewInit() {
+    let top = document.getElementById('top');
+    if (top !== null) {
+      top.scrollIntoView();
+      top = null;
+    }
+  }
 
   sigPregunta(){
        
@@ -45,6 +54,7 @@ export class ConsejosComponent implements OnInit {
        sigPregunta.termiando = true;
        sigPregunta.actual = this.quiz.pactual;
        this.terminado.emit(sigPregunta);
+       this.ngAfterViewInit();
 
   }
 

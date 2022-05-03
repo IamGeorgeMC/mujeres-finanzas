@@ -7,7 +7,7 @@ import { PreguntasComponent } from  './components/pages/preguntas/preguntas.comp
 import { ResultadosComponent } from  './components/pages/resultados/resultados.component';
 
 const routes: Routes = [
-  { path: 'inicio', component: InicioComponent },
+  { path: '', component: InicioComponent },
   { path: 'preguntas', component: PreguntasComponent },
   { path: 'resultados', component: ResultadosComponent },
 
@@ -16,7 +16,7 @@ const routes: Routes = [
 
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{scrollPositionRestoration: 'enabled'})],
   exports: [RouterModule],
 })
 export class AppRoutingModule { }

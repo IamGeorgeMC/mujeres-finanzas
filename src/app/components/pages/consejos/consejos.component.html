@@ -1,10 +1,12 @@
 <div class="">
     <div class="consejos" *ngIf="!showConsejo">
         <div class="row">
-    		<div class="col-4 imagenconsejo">
-    			<img src="../../../../assets/img/respuestas/2A.png" alt="" width="100%">
+    		<div class="col-md-4">
+                <div class="container-img text-center">
+    			     <img src="../../../../assets/img/respuestas/{{img}}" class="imagenconsejo" alt="" width="100%">
+                </div>
     		</div>
-    		<div class="col-8">
+    		<div class="col-md-8">
     			<div class="consejo">
 	    			<h2 class="consejotitulo">Consejo de las expertas</h2>
 	    			<p>{{consejo}}</p>
@@ -12,8 +14,8 @@
     		</div>
     </div>
     <div class="row">
-        <div class="col text-center" *ngIf="!btnResultado">
-            <button class="btn siguiente" (click)="sigPregunta()"><img src="../../../../assets/img/arrow_drop_down_circle.png" alt="">Siguiente</button>
+        <div class="col-12 text-center" *ngIf="!btnResultado">
+            <button class="btn siguiente" (click)="sigPregunta()"><img src="../../../../assets/img/arrow_drop_down_circle.png" alt=""> &nbsp;Siguiente</button>
         </div>
     </div>
     <div class="row">

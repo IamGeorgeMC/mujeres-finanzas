@@ -26,11 +26,12 @@
 .navbar{padding-top: 0rem; padding-bottom: 0rem;}
 .navbar-light .navbar-nav .nav-link {
     color: #5A5A5A;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 15px;
     display: table-cell;
     vertical-align: middle;
-    font-family: "sans-serif;";
+    font-family: "Roboto";
+    font-style: normal;
 }
 .navbar-thow .navbar-nav .nav-link {
     color: #FFF;
@@ -49,8 +50,11 @@
 .nav-item :hover img{
     background: transparent;
 }
+
 .logo{
     max-width: 170px;
+    padding: 20px;
+    cursor: pointer;
 }
 
 .dropdown-menu{
@@ -91,6 +95,87 @@
     position: absolute;
     display: flex;
 }
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    /* border: 1px solid rgba(0,0,0,.2); */
+    border-radius: 0.3rem;
+    outline: 0;
+    background: url(/assets/img/lobby-mide-digital-alta-min.jpg);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    border-radius: 43px;
+    height: 560px;
+}
+
+.modal-header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 0px; 
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+}
+
+.mdigital{
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "Roboto", Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    top: 220px;
+}
+
+.containermdigital{
+    margin: 0px 0px 0px 0px;
+    background-color: #76BC21E3;
+    border-radius: 20px;
+    padding: 13px;
+    
+}
+
+.visita{
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "Roboto", Sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    
+}
+
+.containerbtn{
+    text-align: center;
+}
+
+.btncontinuar{
+    background-color: #76BC21E3;
+    color: #FFFFFF;
+    border-radius: 20px;
+    position: relative;
+    top: 250px;
+}
+
+.icono{
+    display: block;
+    cursor: pointer;
+}
+
+.sbm{
+    display: none;
+    position: absolute;
+  }
+
+.desplegar:hover > .sbm {
+    display: block;
+}
 
 @media(min-width: 1074.4px){
 
@@ -103,7 +188,6 @@
     .navbar-expand-lg .navbar-collapse {
         float: right;
     }
-    
 }
 @media(max-width: 992px) {
     .container{
@@ -126,4 +210,14 @@
     .navbar-expand-lg .navbar-nav .dropdown-menu {
         position: unset;
     }   
+
+    .icono{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767.2px) {
+    .icono{
+        display: none;
+    }
 }

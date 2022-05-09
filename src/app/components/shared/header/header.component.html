@@ -8,24 +8,42 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{ 'show': navbarOpen }">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" [ngClass]="{ 'show': navbarOpen }">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link">ACERCA DE</a>
+                <li class="nav-item" ngbDropdown>
+                    <a class="nav-link desplegar" tabindex="0" ngbDropdownToggle id="navbarDropdown1" role="button">COLECCIÓN</a>
+                    <div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu sbm">
+                        <a ngbDropdownItem  href="https://midedigital.museum/coleccion/nuestro-bienestar/" (click)="$event.preventDefault()">NUESTRO BIENESTAR<div
+                                class="line"></div></a>
+                        <a ngbDropdownItem  href="https://midedigital.museum/coleccion/principios-economia/" (click)="$event.preventDefault()"> PRINCIPIOS DE ECONOMÍA
+                            <div class="line"></div>
+                        </a>
+                        <a ngbDropdownItem href="https://midedigital.museum/coleccion/decisiones-financieras/" (click)="$event.preventDefault()">DECISIONES FINANCIERAS <div
+                                class="line"></div></a>
+                        <a ngbDropdownItem href="https://midedigital.museum/coleccion/desarrollo-sustentable/" (click)="$event.preventDefault()">DESARROLLO SUSTENTABLE <div
+                                class="line"></div></a>
+                    </div>
                 </li>
+                
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">PROMOCIONES</a>
+                    <a class="nav-link" href="https://midedigital.museum/laboratorio/">LABOTARIO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">AYUDA</a>
+                    <a class="nav-link" href="https://midedigital.museum/economia-al-dia/">ECONOMÍA AL DÍA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://midedigital.museum/super-profesores/">SUPERPROFESORES</a>
                 </li>
             </ul>
         </div>
+        <a class="navbar-brand" (click)="$event.preventDefault()" class="icono">
+            <img class="logo" src="assets/img/lobby-icono-mide-header-m0.png" (click)="open(content) " alt="Logo Mide">
+        </a>
     </div>
 </nav>
 
-<nav class="navbar-thow navbar-expand-lg navbar-light">
+<!--<nav class="navbar-thow navbar-expand-lg navbar-light">
     <div class="container p-0">
         <div class="submenu" [ngClass]="{'sinBackGround': !subMenu}">
             <div class="contenido">
@@ -59,5 +77,38 @@
 
         </div>
     </div>
-</nav>
+</nav>-->
 <div class="clearfix"></div>
+
+
+<ng-template #content let-modal class="backmodal">
+    <div class="modal-header">
+      <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+      <div class="row">
+        <div class="col-md-6">
+            <div class="mdigital">
+                <div class="containermdigital">
+                    <strong>Al MIDE Digital:</strong>
+                    <p style="margin: 0;">¡La tecnología nos acerca! Disfruta de interactivos, quizzes y charlas del mundo económico.</p><br>
+                </div>
+            </div>
+            <div class="containerbtn">
+                <a class="btn btncontinuar">Continuar aquí</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="mdigital">
+                <div class="containermdigital">
+                    <strong>Al museo:</strong>
+                    <p style="margin: 0;">Planea tu visita al MIDE en la CDMX. Consulta horarios y compra tus boletos en línea.</p><br>
+                </div>
+            </div>
+            <div class="containerbtn">
+                <a href="https://www.mide.org.mx/" target="_blank" class="btn btncontinuar">Planear tu visita</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
